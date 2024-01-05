@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+        }
+        h1 {
+            font-size: 80px;
+            text-align: center;
+        }
+        .skills, .projects, .education {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .skill, .project, .education-item {
+            border: 3px solid beige;
+            border-radius: 15px;
+            padding: 20px;
+            width: calc(25% - 40px);
+            text-align:center; 
+            margin: 10px;
+        }
+        .skill:hover, .project:hover, .education-item:hover {
+            transform: scale(1.1);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin: auto;
+        }
+        input, textarea {
+            margin: 10px 0;
+            padding: 10px;
+        }
+        input[type=submit] {
+            width: 50%;
+            margin: auto;
+        }
+        header {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background-color: beige;
+        }
+        .intro {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .intro img {
+            width: 50%;
+        }
+        .intro div {
+            text-align: right;
+        }
+        header {
+    background-color: beige;
+    padding: 10px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+p{
+    font-size: 30px;
+}
+
+    </style>
+</head>
+<body>
+<header >
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#skills">Skills</a> |
+        <a href="#projects">Projects</a> |
+        <a href="#education">Education</a> |
+        <a href="#about">About</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="home" class="intro">
+    <div>
+        <h1>I'm Pratyush Mohapatra</h1>
+        <p>A Front End Mastermind</p>
+    </div>
+    <img src="images\Pratyush.jpg" alt="Your image">
+</section>
+<h1>Skills</h1>
+<section id="skills" class="skills">
+   
+   <div class="skill"><img src="images\kisspng-mysql-database-web-development-computer-software-dolphin-5ace280ecd2a56.9486716715234601108404.png" alt="Skill 1" width="450px" height="450px"><p>My SQL</p></div>
+   <div class="skill"><img src="images\kisspng-web-development-cascading-style-sheets-css3-html-5ae480845f38f3.0110241015249245483901.png" alt="Skill 2" width="450px" height="450px"><p>CSS</p></div>
+   <div class="skill"><img src="images\c logo.jpg" alt="Skill 3" width="450px" height="450px"><p>C language</p></div>
+   <div class="skill"><img src="images\kisspng-web-development-responsive-web-design-advanced-css-5b1e73aae576a6.4591989815287223469399.png" alt="Skill 4" width="450px" height="450px"><p>HTML</p></div>
+   <div class="skill"><img src="images\java logo.jpg" alt="Skill 4" width="450px" height="450px"><p>Java</p></div>
+</section>
+<br><br><br><br><br><br><br>
+<h1>Projects</h1>
+<section id="projects" class="projects">
+   
+   
+   <div class="project"><img src="images\java project.jpg" alt="Project 2" width="450px" height="450px"><p>E-commerce Site</p></div>
+   <div class="project"><img src="images\kisspng-web-development-responsive-web-design-advanced-css-5b1e73aae576a6.4591989815287223469399.png" alt="Project 3" width="450px" height="450px"><p>Interactive Dashboard</p></div>
+   <div class="project"><img src="images\calc.jpg" alt="Project 4" width="450px" height="450px"><p>Mobile App</p></div>
+   <div class="project"><img src="images\kisspng-mysql-database-web-development-computer-software-dolphin-5ace280ecd2a56.9486716715234601108404.png" alt="Project 5" width="450px" height="450px"><p>API Development</p></div>
+</section>
+<br><br><br><br><br><br><br>
+<h1>Education</h1>
+<section id="education" class="education">
+   
+   <div class="education-item"><img src="images\dav.jpg" alt="Education 2" width="450px" height="450px"><p>Schooling</p></div>
+   <div class="education-item"><img src="images\rvu.jpg" alt="Education 2" width="450px" height="450px"><p>Bachelor's in Computer Science/p></div>
+  </section>
+<br><br><br><br><br><br><br>
+<h1>About Me</h1>
+<section id="about" class="about">
+   
+   <h2>I am Pratyush, a front-end mastermind with a passion for creating interactive and dynamic web experiences. With a strong foundation in HTML, CSS, JavaScript, and React, I have worked on a variety of projects ranging from website redesigns to developing e-commerce sites and interactive dashboards. I hold a Bachelor's and Master's degree in Computer Science and a certification in Web Development.</h2>
+</section>
+<br><br><br><br><br><br><br>
+
+<section id="contact" class="contact">
+    <div id="contact">
+        <h1>Contact Me</h1>
+        <form action="/submit_form" method="post" onsubmit="showAlert(event)">
+            <label for="fname">Name</label>
+            <input type="text" id="fname" name="name" placeholder="Your name..">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email..">
+            <label for="comments">Comments</label>
+            <textarea id="comments" name="comments" placeholder="Your comments.." style="height:200px"></textarea>
+            <input style="padding: 20px;" type="submit" value="Submit">
+        </form>
+        <br><br><br><br><br>
+        <footer style="background-color: black; color: beige; padding: 20px; text-align: center; position: fixed; left: 0; bottom: 0; width: 100%;">
+            <p style="font-size: xx-small;">&copy; 2024 Pratyush Mohapatra</p>
+        </footer>
+        <script>
+            function showAlert(event) {
+                event.preventDefault(); // Prevent the form from submitting normally
+                alert("Form submitted successfully!");
+            }
+        </script>
+</section>
+<br><br><br><br><br><br><br>
+</body>
+</html>
